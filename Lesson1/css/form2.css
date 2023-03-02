@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  /* border: 1px solid; */
+}
+
+.container {
+  margin: 1% 10%;
+  width: 800px;
+  border: 1px solid;
+}
+
+/* Sắp xếp 2 box thành 2 cột*/
+.box-1 {
+  float: left;
+  width: 35%;
+}
+
+.box-2 {
+  display: inline-block;
+  width: 65%;
+}
+
+/* ======================= */
+/* Căn chỉnh box đầu tiên trong box1 */
+.box-1-2 {
+  background-color: rgb(44, 34, 139);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Điều chỉnh avatar và cỡ chữ name*/
+.box-avatar img {
+  width: 130%;
+}
+.box-avatar {
+  border: 1px solid black;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-1,
+.name-2 {
+  color: white;
+}
+
+.name-1 {
+  padding-top: 5px;
+  font-size: 1.5em;
+}
+
+/* ======================= */
+
+/* Căn chỉnh box 1-1 */
+.box-1-1 {
+  padding-left: 20px;
+  padding-right: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(50, 41, 106);
+}
+
+/* Tạo nền đen, hình trắng cho icon và chữ H1 */
+.icon-1 {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.fa-user,
+.fa-address-book,
+.fa-shield,
+.fa-folder,
+.fa-graduation-cap,
+.fa-briefcase,
+.fa-globe {
+  font-size: 9px;
+  color: white;
+}
+.icon-2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.fa-map-marker,
+.fa-earth-americas,
+.fa-mobile,
+.fa-btc,
+.fa-android,
+.fa-print {
+  font-size: 10px;
+}
+
+.box-heading {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.box-1 h1 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  padding-left: 10px;
+}
+
+.box-1 p {
+  color: white;
+}
+
+progress {
+  color: yellow;
+}
+
+td {
+  padding-right: 10px;
+}
+
+/* ================= */
+
+/* Điều chỉnh các box trong box2 */
+
+.box-2-1 {
+  padding-left: 20px;
+  padding-right: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.box-2-para,
+.box-2-table {
+  padding-left: 35px;
+}
+
+.box-2 h1 {
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.box-2 h2 {
+  font-size: 1.1em;
+  font-weight: normal;
+  padding-top: 10px;
+}
+.box-address-time {
+  font-size: 0.9em;
+  color: darkgray;
+  padding-top: 3px;
+  padding-bottom: 5px;
+}
+
+.box-2-table img {
+  width: 100px;
+}
+
+.box-2-table td {
+  width: 150px;
+  text-align: center;
+}
