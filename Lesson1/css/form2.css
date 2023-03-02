@@ -24,7 +24,7 @@
 /* ======================= */
 /* Căn chỉnh box đầu tiên trong box1 */
 .box-1-2 {
-  background-color: rgb(44, 34, 139);
+  background-color: #273238;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,17 +33,17 @@
 
 /* Điều chỉnh avatar và cỡ chữ name*/
 .box-avatar img {
-  width: 130%;
+  width: 100%;
 }
 .box-avatar {
   border: 1px solid black;
-  width: 180px;
-  height: 180px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .name-1,
@@ -64,7 +64,7 @@
   padding-right: 5px;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: rgb(50, 41, 106);
+  background-color: #36474f;
 }
 
 /* Tạo nền đen, hình trắng cho icon và chữ H1 */
