@@ -4,20 +4,26 @@
   /* border: 1px solid; */
 }
 
+body {
+  display: flex;
+  justify-content: center;
+}
 .container {
-  margin: 1% 10%;
+  /*  #margin: 1% 10%; */
+  display: flex;
   width: 800px;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 
 /* Sắp xếp 2 box thành 2 cột*/
 .box-1 {
-  float: left;
+  /* float: left; */
   width: 35%;
+  background-color: #36474f;
 }
 
 .box-2 {
-  display: inline-block;
+  /* display: inline-block; */
   width: 65%;
 }
 
