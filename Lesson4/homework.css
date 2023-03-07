@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid; */
+}
+
+/* Căn chỉnh header */
+header img {
+  width: 100%;
+  height: 100px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+/* Căn chỉnh nav chứa menu */
+nav {
+  display: flex;
+  top: 100px;
+  justify-content: center;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+/* Căn chỉnh icon */
+.fa-solid {
+  line-height: 30px;
+  padding: 0 40px 0 20px;
+}
+
+.fa-house {
+  position: absolute;
+  left: 20px;
+}
+
+.fa-gear {
+  position: absolute;
+  right: 20px;
+}
+
+/* Căn chỉnh menu */
+nav ul {
+  list-style: none;
+  background-color: antiquewhite;
+}
+
+nav li {
+  width: 100px;
+  line-height: 30px;
+  display: inline-block;
+}
+
+.menu > a {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.submenu-1 > a {
+  font-size: 1.1em;
+}
+
+nav a {
+  text-decoration: none;
+  padding-left: 5px;
+  color: black;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  position: relative;
+}
+.submenu-1 {
+  display: none;
+  position: absolute;
+  border-top: 1px solid black;
+}
+
+nav li:hover .submenu-1 {
+  display: block;
+}
+
+.menu:hover > a {
+  color: red;
+}
+
+.submenu-1 li:hover > a {
+  color: red;
+}
+
+/* noi dung */
+.noidung {
+  width: 500px;
+  margin: 200px 10px 10px 50px;
+}
+div img {
+  width: 100%;
+}
