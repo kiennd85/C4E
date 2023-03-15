@@ -20,11 +20,6 @@ nav a {
   font-size: 1.2em;
 }
 
-/* Điều chỉnh chiều cao thanh menu qua thẻ a link liên kết */
-.menu > a {
-  line-height: 50px;
-}
-
 /* Điều chỉnh chiều cao drop menu qua thẻ a và cỡ chỡ  */
 .drop-1-box a {
   font-size: 1em;
@@ -34,29 +29,22 @@ nav a {
 /* căn chỉnh nav */
 nav {
   background-color: white;
-  display: flex;
+  display: flex; /* Sắp xếp các phần tử bên trong nav*/
   justify-content: space-around;
   align-items: center;
+  position: fixed; /* cố định menu ở phần top*/
+  top: 0;
+  width: 100%;
+  height: 50px; /* Giới hạn chiều cao phần menu, nếu ko ht sẽ lấy theo chiều cao mặc đinh nội dung  */
 }
 
 /* Bỏ dấu với các ul, li và tạo màu nền  */
 nav ul {
   list-style: none;
   background-color: white;
-  display: flex;
-  justify-content: center;
-}
-
-/* Giới hạn chiều cao phần menu, 
-nếu ko ht sẽ lấy theo chiều cao mặc đinh nội dung 
-đồng thời cho postion:relative để căn chỉnh các drop menu
-sử dụng position:absolute*/
-nav {
-  height: 50px;
-}
-.container {
-  /* height: 50px; */
-  position: relative;
+  display: none;
+  position: relative; /* Postion:relative để căn chỉnh các drop menu
+                      sử dụng position:absolute*/
 }
 
 /* Các li có độ rộng cố định */
@@ -113,29 +101,25 @@ căn chỉnh vị trí sang bên cạnh */
   visibility: visible;
 }
 
-/* Bổ sung icon bars cho responsive */
-.menu-icon-bars {
+.menu-icon-user {
   display: none;
 }
 
 /* CSS phần footer */
-/*  */
 footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  background-color: rgb(123, 138, 150);
+  background-color: rgb(111, 205, 173);
 }
 
 .footer-1 {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  padding: 30px 50px 30px 50px;
 }
 
 .footer-address {
-  width: 40%;
-  padding: 10px 0 10px 0;
   color: white;
+  padding: 10px 0 10px 0;
 }
 
 .footer-address-p1 {
@@ -149,7 +133,6 @@ footer ul {
 
 footer a {
   text-decoration: none;
-  padding-left: 5px;
   color: white;
   display: inline-block;
   height: 100%;
@@ -157,7 +140,7 @@ footer a {
 }
 
 .footer-menu {
-  width: 30%;
+  border-top: 1px solid white;
   padding: 10px 0 10px 0;
 }
 .footer-menu ul {
@@ -165,7 +148,6 @@ footer a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  text-align: center;
 }
 
 footer a:hover {
@@ -173,9 +155,9 @@ footer a:hover {
 }
 
 .footer-icon {
-  width: 20%;
+  padding: 10px 0 10px 0;
+  border-top: 1px solid white;
   display: flex;
-  justify-content: center;
   padding: 10px 0 10px 0;
 }
 
@@ -185,35 +167,87 @@ footer a:hover {
 }
 
 .footer-2 {
-  background-color: aqua;
+  background-color: rgb(111, 205, 173);
   text-align: center;
   padding: 5px;
+  border-top: 1px solid white;
 }
 
 .footer-2-span2 {
   font-weight: bold;
 }
 
-/* Code responsive */
+/* Nội dung grid */
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: antiquewhite;
+  padding: 10px;
+}
+.gird-container {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
+  gap: 10px;
+  background-color: white;
+  margin: 70px 10px 10px 10px;
+  border-radius: 5px;
+  min-height: 500px;
+}
 
-@media screen and (max-width: 768px) {
-  nav ul,
-  nav .fa-user {
-    display: none;
+/* Code responsive */
+/* Tablet */
+@media screen and (min-width: 425px) {
+  .gird-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    gap: 20px;
+  }
+}
+
+/* Code responsive */
+/* Laptop/Desktop */
+@media screen and (min-width: 768px) {
+  /*Hiện lại menu*/
+  nav ul {
+    list-style: none;
+    background-color: white;
+    display: flex;
+    justify-content: center;
   }
 
-  .menu-icon-bars {
+  .menu-icon-user {
     display: block;
   }
 
-  .footer-1 {
-    flex-direction: column;
-    align-items: center;
+  .menu-icon-bars {
+    display: none;
   }
 
-  .footer-address,
-  .footer-menu,
+  .gird-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    gap: 25px;
+    height: 100%;
+  }
+  .footer-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer-address {
+    width: 40%;
+  }
+  .footer-menu {
+    width: 30%;
+    border: none;
+    text-align: center;
+  }
   .footer-icon {
-    width: 90%;
+    width: 20%;
+    border: none;
   }
 }
