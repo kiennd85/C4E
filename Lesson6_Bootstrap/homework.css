@@ -24,19 +24,6 @@ nav {
   height: 70px; /* Giới hạn chiều cao phần menu, nếu ko ht sẽ lấy theo chiều cao mặc đinh nội dung  */
 }
 
-h4,
-a {
-  font-family: sans-serif;
-  font-size: 1.3rem;
-  line-height: 1.5;
-}
-
-p {
-  font-family: sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
 .kn {
   color: orange;
   font-size: 1.6em;
@@ -50,6 +37,7 @@ nav a {
   display: block;
   width: 100%;
   height: 100%;
+  font-size: 1.2em;
   font-weight: bold;
 }
 
@@ -139,14 +127,7 @@ căn chỉnh vị trí sang bên cạnh */
                       để phần footer không bị kéo lên trên */
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto;
-  text-align: center;
-}
-
 .column-container {
-  text-align: center;
   padding: 1rem;
 }
 
@@ -243,7 +224,14 @@ footer a:hover {
 }
 
 /* Code responsive */
+/* Tablet */
+@media screen and (min-width: 425px) {
+}
+
+/* Code responsive */
+/* Laptop/Desktop */
 @media screen and (min-width: 768px) {
+  /*Hiện lại menu*/
   nav ul {
     list-style: none;
     background-color: white;
@@ -263,11 +251,6 @@ footer a:hover {
     width: 70%;
   }
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-
   .footer-1 {
     display: flex;
     flex-direction: row;
@@ -285,12 +268,5 @@ footer a:hover {
     width: 20%;
     border: none;
     justify-content: flex-end;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
   }
 }

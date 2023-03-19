@@ -131,7 +131,7 @@ căn chỉnh vị trí sang bên cạnh */
 /* ======= CSS cho phần nội dung ==========*/
 
 .text-content {
-  width: 80%;
+  /* width: 80%; */
   background-color: white;
   border-radius: 10px;
   margin: 100px 0 20px 0;
@@ -140,9 +140,13 @@ căn chỉnh vị trí sang bên cạnh */
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: auto;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-wrap-col{
+  max-width:384px;
 }
 
 .column-container {
@@ -164,7 +168,7 @@ căn chỉnh vị trí sang bên cạnh */
   margin-bottom: 16px;
 }
 
-/*========== CSS phần footer=========== */
+/* ========= CSS phần footer=========== */
 footer {
   width: 100%;
   background-color: rgb(111, 205, 173);
@@ -259,14 +263,9 @@ footer a:hover {
     display: none;
   }
 
-  .text-content {
+  /* .text-content {
     width: 70%;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-  }
+  } */
 
   .footer-1 {
     display: flex;
@@ -286,11 +285,3 @@ footer a:hover {
     border: none;
     justify-content: flex-end;
   }
-}
-
-@media screen and (min-width: 992px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-}
