@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="./form.css" />
 
-    <title>Homework1_Bai1</title>
+    <title>Form</title>
   </head>
   <body>
     <div class="regisForm">
@@ -39,7 +39,7 @@
         <div>Phone:</div>
         <div><input class="phoneinput" type="tel" value="+84" /></div>
         <br />
-        <div><input type="number" placeholder="phone no" /></div>
+        <div><input type="text" placeholder="phone no" id="inputPhone" /></div>
         <br />
         <div>Current Address:</div>
         <div>
@@ -53,17 +53,27 @@
         </div>
         <br />
         <div class="fontbold">Email:</div>
-        <div><input type="email" placeholder="Enter email" /></div>
+        <div>
+          <input type="text" id="inputEmail" />
+        </div>
         <br />
         <div class="fontbold">Password:</div>
-        <div><input type="password" placeholder="Enter Password" /></div>
+        <div>
+          <input type="text" placeholder="Enter Password" id="inputPassword" />
+        </div>
         <br />
         <div class="fontbold">Retype Password:</div>
-        <div><input type="password" placeholder="Retype Password" /></div>
+        <div>
+          <input
+            type="text"
+            placeholder="Retype Password"
+            id="inputRePassword"
+          />
+        </div>
         <br />
-        <button class="registerBtn">Register</button>
+        <button class="registerBtn" id="registerBtn">Register</button>
       </form>
-      <script src="js/app.js"></script>
     </div>
+    <script src="./appnew.js"></script>
   </body>
 </html>
